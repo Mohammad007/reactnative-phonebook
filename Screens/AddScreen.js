@@ -42,6 +42,8 @@ export default function AddScreen({ navigation, route }) {
 
   // add data
   const addData = () => {
+
+    // validate
     if (name === "")
       return setError({ ...error, name: "Name is required" });
     
