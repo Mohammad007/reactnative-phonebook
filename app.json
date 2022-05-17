@@ -29,5 +29,22 @@
     "web": {
       "favicon": "./assets/favicon.png"
     }
-  }
+  },
+  "plugins": [
+    [
+      "expo-image-picker",
+      {
+        "photosPermissions": "ask",
+        "name": "EXPO_IMAGE_PICKER",
+        "value": {
+          "ios": {
+            "usesPermissions": true
+          },
+          "android": {
+            "usesPermissions": true
+          }
+        }
+      }
+    ]
+  ]
 }
